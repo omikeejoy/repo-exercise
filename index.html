@@ -11,17 +11,20 @@
         <div id="textbox">
             <h2>What to expect next</h2>
             <p>Once you've submitted your inquiry, expect a response through WhatsApp or email within 24 hours. From there, you'll confirm your schedule, make a payment, and be connected with your tour guide to finalize your itinerary.</p>
+            <p>* indicates required</p>
         </div>
         <form method="post">
-                <div class="form-grps">
-                    <label for="fullName">Name*</label><br>
-                    <input type="text" id="fullName" name="name" required>
-                </div>    
-                <div class="form-grps">
-                    <label for="email">E-mail*</label><br>
-                    <input type="email" id="email" name="email" required>
-                </div>       
-                <div class="form-grps">
+                <div class="form-grps-horizontal">
+                    <div id="container1">
+                        <label for="fullName">Name*</label><br>
+                        <input type="text" id="fullName" name="name" required>
+                    </div>    
+                    <div id="container2">
+                        <label for="email">E-mail*</label><br>
+                        <input type="email" id="email" name="email" required>
+                    </div>     
+                </div>      
+                <div class="form-grps" id="container3">
                     <label for="dropdownOne">Number of People*</label><br>
                     <select name="num-of-ppl" id="dropdownOne" required>
                         <option>choose a number</option>
@@ -30,12 +33,12 @@
                         <option value="10+">10+</option>
                     </select>    
                 </div>   
-                <div class="form-grps">
+                <div class="form-grps" id="container4">
                     <label for="phoneNumber">Mobile Phone Number</label><br>
                     <select name="countryCodeSelector" id="countrycode">Country Code</select>
                     <input type="number" id="phoneNumber" name="Phone-number">
                 </div>   
-                <div class="form-grps">
+                <div class="form-grps" id="container5">
                     <label for="tourTypes">Tour Types</label><br>
                     <select name="itinerary" id="tourTypes">
                         <option value="0">Select your Itinerary</option>
@@ -43,23 +46,28 @@
                         <option value="2">Tour Option 2</option>
                     </select>
                 </div>   
-                <div class="form-grps">
-                    <label for="arrivalDate">Planned Arrival Dates:</label><br>
-                    <input type="date" id="arrivalDate" name="arrival-date">
-                </div>   
-                <div class="form-grps">
-                    <label for="tourDate">Planned Tour Dates:</label><br>
-                    <input type="date" id="tourDate" name="tour-date">
-                </div>
+                <div class="form-grps-horizontal">
+                    <div id="container6">
+                        <label for="arrivalDate">Planned Arrival Dates:</label><br>
+                        <input type="date" id="arrivalDate" name="arrival-date">
+                    </div>   
+                    <div id="container7">
+                        <label for="tourDate">Planned Tour Dates:</label><br>
+                        <input type="date" id="tourDate" name="tour-date">
+                    </div>
+                </div>    
+
                 <h4>Hotel Pick-up:</h4>
-                <div class="form-grps">
-                    <input type="radio" id="yes" value="yes">
-                    <label for="yes">Yes</label><br>
-                    <input type="radio" id="no" value="no">    
-                    <label for="no">No</label>
-                </div>   
-            
-                <div class="form-grps">
+                <div class="form-grps-horizontal">
+                    <div id="container8">
+                        <input type="radio" id="yes" value="yes">
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="no" value="no">    
+                        <label for="no">No</label>
+                    </div>   
+                </div>  
+
+                <div class="form-grps" id="container9">
                     <label for="others"></label>Preferences<br>
                     <textarea name="textBox" rows="10" cols="30" placeholder="e.g food specifications, interests, and other requests"></textarea>
                 </div>   

@@ -1,0 +1,26 @@
+/*use pseudo class for invalid state */
+/* use pseudo class for unfilled state */
+
+h2, p, label, h4 {
+    color: #EE5252;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0 auto;
+}
+
+.form-grps {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-grps-horizontal {
+    display: flex;
+    gap: 1rem;
+}
+.form-grps.horizontal label{
+flex: 1;
+}
