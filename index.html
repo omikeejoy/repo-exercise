@@ -11,7 +11,7 @@
         <div id="textbox">
             <h2>What to expect next</h2>
             <p>Once you've submitted your inquiry, expect a response through WhatsApp or email within 24 hours. From there, you'll confirm your schedule, make a payment, and be connected with your tour guide to finalize your itinerary.</p>
-            <p>* indicates required</p>
+            <p id="note">* indicates required</p>
         </div>
         <form method="post">
                 <div class="form-grps-horizontal">
@@ -34,7 +34,9 @@
                     </select>    
                 </div>   
                 <div class="form-grps" id="container4">
-                    <label for="phoneNumber">Mobile Phone Number</label><br>
+                    <label for="phoneNumber">Mobile Phone Number</label>
+                </div>
+                <div class="form-grps" id="container4-inputs">   
                     <select name="countryCodeSelector" id="countrycode">Country Code</select>
                     <input type="number" id="phoneNumber" name="Phone-number">
                 </div>   

@@ -1,7 +1,7 @@
 /*use pseudo class for invalid state */
 /* use pseudo class for unfilled state */
 
-h2, p, label, h4 {
+h2, p#note, label, h4, #container9 {
     color: #EE5252;
 }
 
@@ -15,6 +15,7 @@ form {
 .form-grps {
     display: flex;
     flex-direction: column;
+    margin: 5px;
 }
 
 .form-grps-horizontal {
@@ -23,4 +24,21 @@ form {
 }
 .form-grps.horizontal label{
 flex: 1;
+}
+
+#container4  {
+    display: flex;
+    flex-direction: column;
+}
+#container4-inputs select {
+    margin: 1px;
+    padding: 1px;
+}
+#container4-inputs input {
+    margin: 1px;
+    padding: 1px;
+}
+#container4-inputs{
+    display: flex;
+    flex-direction: row;
 }
